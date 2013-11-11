@@ -46,9 +46,7 @@ jQuery.fn.styledSelect = function(options) {
 
 		$selElm.bind('change',function() {
 			jQuery(this).next().text(this.options[this.selectedIndex].text);
-		}).bind('resize',function() {
-			jQuery(this).parent().width( jQuery(this).width()+'px' );
-		});
+		})
 
 		$selReplace.text($selElm.children('option').eq($selElm.context.selectedIndex).text());
 		$selCover.width($selElm.width()+'px');
