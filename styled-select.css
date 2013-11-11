@@ -1,0 +1,36 @@
+/* Object style */
+
+.select-replace-cover {
+	color: #acacac;
+	border: 1px solid #e9e9e9;
+	width: 100% !important;
+	height: 31px;
+	cursor: pointer;
+	background: #f7f7f7;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.select-replace {
+	background: url(dot.png) no-repeat right 13px transparent;
+	padding: 6px 14px;
+	cursor: pointer;
+}
+.select-replace-cover select {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+/* Fix for webkit based browsers (especially on mobile devices, which would overwrite the styled select plugin if the declarations below wouldn't be preset */
+
+input, input[type="submit"], textarea, select {
+	-webkit-appearance: none !important;
+	border-radius: 0;
+}
+input[type="checkbox"] {
+	-webkit-appearance: checkbox !important;
+}
+input[type="radio"] {
+	-webkit-appearance: radio !important;
+}
